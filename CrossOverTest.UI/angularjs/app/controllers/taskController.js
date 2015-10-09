@@ -23,11 +23,26 @@
 
     function getTasks() {
         var response = taskService.getTasks();
-        response.then(function (data) {       
+        response.then(function (data) {
             $scope.tasks = data;
         });
     }
 
+
+    $scope.showModalInfo = function (task, module) {
+        if (module == 'test')
+
+            $('#modal-info-test').modal('show');
+        else
+            $('#modal-info-change').modal('show');
+
+    }
+
+
+    $scope.showmodaldeploy = function () {
+
+        $('#modal-deploy').modal('show');
+    }
 
 
 });

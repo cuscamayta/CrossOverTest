@@ -43,7 +43,7 @@
             <div id="collapse{{$index}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading{{$index}}" aria-expanded="false" style="height: 0px;">
                 <div class="panel-body">
                     <div class="row show-grid">
-                        <div class="col-md-2 col-padding">
+                        <div class="col-md-2 col-padding" ng-click="showModalInfo(task,'build')">
                             <div class="task-detail panel-{{task.SubTask[0].State.toLowerCase()}}">
                                 <div class="task-detail-title">Metrics</div>
                                 <div>
@@ -74,7 +74,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-2 col-padding">
+                        <div class="col-md-2 col-padding" ng-click="showModalInfo(task,'build')">
                             <div class="task-detail panel-{{task.SubTask[1].State.toLowerCase()}}">
 
                                 <div class="task-detail-title">
@@ -97,7 +97,7 @@
 
                             </div>
                         </div>
-                        <div class="col-md-2 col-padding">
+                        <div class="col-md-2 col-padding" ng-click="showModalInfo(task,'test')">
                             <div class="task-detail panel-{{task.SubTask[2].State.toLowerCase()}}">
                                 <div class="task-detail-title">Unit Test</div>
                                 <div>
@@ -123,7 +123,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-2 col-padding">
+                        <div class="col-md-2 col-padding" ng-click="showModalInfo(task,'test')">
                             <div class="task-detail panel-{{task.SubTask[2].State.toLowerCase()}}">
                                 <div class="task-detail-title">Functional Test</div>
                                 <div>
@@ -174,7 +174,7 @@
                                 <span class="title-result-small">Result</span>
                                 <span class="title-result-medium-completed">Complete</span>
                                 <span>
-                                    <a href="#" class="btn btn-info btn-result">
+                                    <a href="" class="btn btn-info btn-result" ng-click="showmodaldeploy()">
                                         Deploy
                                     </a>To :
                                 </span>
@@ -194,3 +194,110 @@
         </div>
     </div>
 </div>
+
+<div class="modal fade" id="modal-info-change">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Metric/ Build Information</h4>
+            </div>
+            <div class="modal-body container">
+                <div class="col-sm-6 col-md-6">
+                    <div class="thumbnail">                                             
+                        <div class="caption">
+                            <h4>Change List Files</h4>
+                            <p>
+                                /home/ideveloperpc/.local/share/recently-user.bet<br>
+                                /home/ideveloperpc/.local/share/recently-datasource.pickle<br>
+                                /home/ideveloperpc/.local/share/fts.index/postlist.baseB<br>
+                                /home/ideveloperpc/.local/share/recently-user.sqllite<br>
+                                /home/ideveloperpc/.local/share/recently-previus-file.pickle<br>
+                                /home/ideveloperpc/.local/share/recently-termiList.bet<br>
+                                /home/ideveloperpc/.local/share/recently-post.bet<br>
+                                /home/ideveloperpc/.local/share/recently-datasource.pickle<br>
+                                /home/ideveloperpc/.local/share/fts.index/postlist.baseA<br>
+                                /home/ideveloperpc/.local/share/flitlook<br>
+                                /home/ideveloperpc/.local/share/recently-detail.bet<br>
+                                /home/ideveloperpc/.local/share/recently-user.bet<br>
+                                /home/ideveloperpc/.local/share/recently-datasource.pickle<br>
+                                /home/ideveloperpc/.local/share/fts.index/postlist.baseC<br>
+                                /home/ideveloperpc/.local/share/recently-user.bet<br>
+                                /home/developerpc/.dmrc<br>
+                            </p>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>                
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" id="modal-info-test">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Tests Information</h4>
+            </div>
+            <div class="modal-body container">
+                <div class="col-sm-6 col-md-6">
+                    <div class="thumbnail">                        
+                        <div class="caption">
+                            <h4>Change List Files</h4>
+                            <p>
+                                public void itemListCount  failed<br>
+                                public void itemListPerUser  passed<br>
+                                public void itemListAccount  failed<br>
+                                public void itemListPrefix  failed<br>
+                                public void itemDisplayCorrectly  failed<br>
+                                public void itemListCount  passed<br>
+                                public void itemListCount  failed<br>
+                                public void itemListCount  failed<br>
+                                public void itemListCount  passed<br>
+                                public void itemListCount  passed<br>
+                                public void itemListCount  passed<br>
+                                public void itemListCount  passed<br>
+                                public void itemListCount  failed<br>
+                                public void itemListCount  failed<br>
+                                public void itemListCount  failed<br>
+                                public void itemListCount  passed<br>
+                                public void itemListCount  failed<br>
+                                public void itemListCount  failed<br>
+                                public void itemListCount  passed<br>
+                                public void itemListCount  failed<br>
+                                public void itemListCount  passed<br>
+                                public void itemListCount  passed<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" id="modal-deploy">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Deploy</h4>
+            </div>
+            <div class="modal-body container">
+                <p> Deploying....</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-warning" data-dismiss="modal">Cancel</button>                
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- /.modal -->

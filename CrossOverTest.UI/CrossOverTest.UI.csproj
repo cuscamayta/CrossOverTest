@@ -194,6 +194,7 @@
     <Content Include="angularjs\app\directives\progress.js" />
     <Content Include="angularjs\app\directives\taskDetail.js" />
     <Content Include="angularjs\app\partials\home.html" />
+    <Content Include="angularjs\app\partials\modalInfo.html" />
     <Content Include="angularjs\app\partials\shared\progress.html" />
     <Content Include="angularjs\app\partials\shared\taskDetail.html" />
     <Content Include="angularjs\app\partials\task.html" />
