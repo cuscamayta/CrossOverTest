@@ -1,0 +1,432 @@
+﻿
+/* Sticky footer styles
+    -------------------------------------------------- */
+
+html,
+body {
+    height: 100%;
+    /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by its height */
+    margin: 0 auto -60px;
+    /* Pad bottom by footer height */
+    padding: 0 0 60px;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+    height: 60px;
+    background-color: #222222;
+}
+
+
+/* Custom page CSS
+    -------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+#wrap > .container {
+    padding: 60px 15px 0;
+}
+
+.container .credit {
+    margin: 20px 0;
+}
+
+#footer > .container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+code {
+    font-size: 80%;
+}
+
+
+
+
+
+/********** custom css*/
+.header-information {
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+    line-height: 40px;
+}
+
+
+.icon-state-container {
+    overflow: hidden;
+    width: 60px;
+    height: 40px;
+    border: solid 2px #C4C4C4;
+    position: relative;
+}
+
+.icon-state-base {
+    width: 60px;
+    height: 40px;
+    background-color: #D8D8D8;
+}
+
+.icon-state-progress {
+    width: 0px;
+    height: 40px;
+    position: absolute;
+    top: 0px;
+}
+
+
+.icon-state-pending {
+    background-color: #D8D8D8;
+}
+
+.icon-state-running {
+    background-color: #5E9CD3;
+}
+
+.icon-state-rejected {
+    background-color: #BE0712;
+}
+
+.icon-state-completed, .icon-state-accepted {
+    background-color: #548039;
+}
+
+
+.panel-running {
+    border: solid 2px #5E9CD3;
+    color: #5E9CD3;
+}
+
+.panel-rejected {
+    border: solid 2px #CE434B;
+    color: #CE434B;
+}
+
+.panel-accepted, .panel-completed {
+    border: solid 2px #548039;
+    color: #548039;
+}
+
+
+.panel-running, .panel-rejected, .panel-accepted, .panel-completed {
+    font-weight: bold;
+}
+
+.task-detail {
+    height: 160px;
+    width: auto;
+    margin: 0 auto;
+    display: none;
+}
+
+.chart-container {
+    height: 100px;
+    width: 100px;
+}
+
+
+.task-detail-title {
+    text-align: left;
+    padding-left: 7px;
+    font-weight: bold;
+    color: inherit;
+    font-family: "DIN Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: large;
+}
+
+.progress-bar-container {
+    margin-bottom: 7px;
+    padding: 0 7px;
+}
+
+span.percent-description {
+    display: block;
+    font-weight: bold;
+    color: #548039;
+}
+
+
+
+.result > span {
+    display: block;
+}
+
+.font-mini {
+    font-size: 7px;
+    line-height: 0;
+}
+
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+.build-container {
+    padding-top: 15px;
+    padding-bottom: 12px;
+}
+
+.clear {
+    clear: both;
+}
+
+.pull-center {
+    margin: 0 auto;
+}
+
+.col-task-info {
+    position: relative;
+    width: 85px;
+    text-align: center;
+}
+
+.text-footer {
+    font-size: 11px;
+    color: #000;
+    font-weight: bold;
+}
+
+
+.metric-test-percent {
+    position: absolute;
+    top: 12px;
+    left: 34px;
+    color: #fff;
+}
+
+.col-padding {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.test-percent {
+    display: block;
+    font-size: 35px;
+    letter-spacing: -6px;
+}
+
+.test-description-percent {
+    font-size: 12px;
+    color: green;
+}
+
+.text-percent-padding {
+    padding-top: 15px;
+}
+
+.title-result-small {
+    font-size: 18px;
+    color: #000;
+}
+
+.title-result-medium-rejected {
+    font-size: 17px;
+    color: red;
+}
+
+.title-result-medium-accepted {
+    font-size: 17px;
+    color: #FED86E;
+}
+
+.title-result-medium-completed {
+    font-size: 25px;
+    color: green;
+}
+
+.btn-result {
+    background-color: #5E9CD3;
+    border-radius: 0;
+    width: 100px;
+}
+
+
+
+/**************ICONS*/
+
+.sprite {
+    background-image: url(/Content/icons/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-icon-build-accepted {
+    width: 44px;
+    height: 38px;
+    background-position: -5px -5px;
+}
+
+.sprite-icon-build-completed {
+    width: 44px;
+    height: 38px;
+    background-position: -59px -5px;
+}
+
+.sprite-icon-build-pending {
+    width: 46px;
+    height: 40px;
+    background-position: -113px -5px;
+}
+
+.sprite-icon-build-running {
+    width: 46px;
+    height: 40px;
+    background-position: -169px -5px;
+}
+
+.sprite-icon-down-rejected {
+    width: 50px;
+    height: 50px;
+    background-position: -5px -55px;
+}
+
+.sprite-icon-firewall-accepted {
+    width: 44px;
+    height: 38px;
+    background-position: -65px -55px;
+}
+
+.sprite-icon-firewall-complete {
+    width: 44px;
+    height: 38px;
+    background-position: -119px -55px;
+}
+
+.sprite-icon-firewall-pending {
+    width: 44px;
+    height: 38px;
+    background-position: -173px -55px;
+}
+
+.sprite-icon-firewall-rejected {
+    width: 44px;
+    height: 38px;
+    background-position: -65px -103px;
+}
+
+.sprite-icon-firewall-running {
+    width: 44px;
+    height: 38px;
+    background-position: -119px -103px;
+}
+
+.sprite-icon-right-yellow {
+    width: 53px;
+    height: 43px;
+    background-position: -173px -103px;
+}
+
+.sprite-icon-up-completed {
+    width: 50px;
+    height: 50px;
+    background-position: -5px -156px;
+}
+
+.sprite-icon-up-pending {
+    width: 50px;
+    height: 55px;
+    background-position: -65px -156px;
+}
+
+.sprite-icon-up-rejected {
+    width: 50px;
+    height: 55px;
+    background-position: -125px -156px;
+}
+
+.sprite-icon-up-running {
+    width: 50px;
+    height: 55px;
+    background-position: -185px -156px;
+}
+
+.sprite-logo-white {
+    width: 219px;
+    height: 60px;
+    background-position: -227px -5px;
+}
+
+.sprite-rejected-icon {
+    width: 46px;
+    height: 40px;
+    background-position: -236px -75px;
+}
+
+.sprite-running-icon-large {
+    width: 69px;
+    height: 60px;
+    background-position: -292px -75px;
+}
+
+
+
+
+
+
+
+/************** Override bootstrasp css*/
+.panel-default > .panel-heading {
+    color: #6D6A6A;
+    background-color: #FFFFFF;
+    border-color: #C4C4C4;
+    border: solid 2px;
+}
+
+.panel-default > .panel-collapse {
+    background-color: #FFFFFF;
+    border-color: #C4C4C4;
+    border: solid 2px;
+}
+
+.panel-group {
+    margin-bottom: 0px;
+}
+
+
+
+.panel-pending {
+    border: solid 2px #C4C4C4;
+    color: #C4C4C4;
+}
+
+.panel-group .panel {
+    margin-bottom: 0;
+    border-radius: 0px;
+}
+
+
+.progress {
+    height: 25px;
+    border-radius: 0px;
+    background-color: #F6CBAE;
+}
+
+.progress-bar {
+    background-color: #C6DFB5;
+}
+
+.panel-group .panel-heading + .panel-collapse > .panel-body, .panel-group .panel-heading + .panel-collapse > .list-group {
+    border: none;
+}
+
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 60px;
+    height: 60px;
+    padding-top: 0;
+}

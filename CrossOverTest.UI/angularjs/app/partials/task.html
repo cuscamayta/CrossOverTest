@@ -1,0 +1,196 @@
+﻿<div>
+    <h2>Task Runner</h2>
+</div>
+<div>
+
+    <div class="panel-group" role="tablist" aria-multiselectable="true">
+        <div class="row show-grid">
+            <div class="col-md-3">
+                Change List /Build
+            </div>
+            <div class="col-md-2">Owner</div>
+            <div class="col-md-2">Time Started</div>
+            <div class="col-md-1">State</div>
+            <div class="col-md-1">Metric</div>
+            <div class="col-md-1">Build</div>
+            <div class="col-md-1">Unit Test</div>
+            <div class="col-md-1">Functional Test</div>
+        </div>
+    </div>
+    <div class="panel-group" id="accordion-task" role="tablist" aria-multiselectable="true">
+        <div data-ng-repeat="task in tasks" class="panel panel-{{task.State.toLowerCase()}}">
+            <div class="panel-heading header-information" role="tab" id="heading{{$index}}">
+                <div class="row show-grid">
+                    <div class="col-md-1">
+                        <i class="sprite sprite-icon-{{task.TypeTask.toLowerCase()}}-{{task.State.toLowerCase()}}"></i>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion-task" href="{{createLinkToInfo(task,$index)}}" aria-expanded="false" aria-controls="collapse{{$index}}" class="collapsed">
+                                {{task.TaskName}}
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">{{task.Owner}}</div>
+                    <div class="col-md-2">{{task.TimeStarted}}</div>
+                    <div class="col-md-1">{{task.State}}</div>
+                    <div class="col-md-1" ng-repeat="subtask in task.SubTask">
+                        <data-progress model="subtask"></data-progress>
+                    </div>
+                </div>
+            </div>
+            <div id="collapse{{$index}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading{{$index}}" aria-expanded="false" style="height: 0px;">
+                <div class="panel-body">
+                    <div class="row show-grid">
+                        <div class="col-md-2 col-padding">
+                            <div class="task-detail panel-{{task.SubTask[0].State.toLowerCase()}}">
+                                <div class="task-detail-title">Metrics</div>
+                                <div>
+                                    <div class="pull-right text-center col-task-info">
+                                        <i class="sprite sprite-icon-up-completed pull-center"></i>
+                                        <span class="metric-test-percent">{{task.SubTask[0].Metric.CountTest}}</span>
+                                        <span class="text-footer">Maintainability</span>
+                                    </div>
+                                    <div class="pull-left text-center col-task-info">
+                                        <i class="sprite sprite-icon-up-completed pull-center"></i>
+                                        <span class="metric-test-percent">{{task.SubTask[0].Metric.Maintainability}}</span>
+                                        <span class="text-footer">Test</span>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div>
+                                    <div class="pull-right text-center col-task-info">
+                                        <i class="sprite sprite-icon-right-yellow pull-center"></i>
+                                        <span class="metric-test-percent">{{task.Metric.Workmanship}}</span>
+                                        <span class="text-footer">WorkmanShip</span>
+                                    </div>
+                                    <div class="pull-left text-center col-task-info">
+                                        <i class="sprite sprite-icon-right-yellow pull-center"></i>
+                                        <span class="metric-test-percent">{{task.Metric.Security}}</span>
+                                        <span class="text-footer">Security</span>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-padding">
+                            <div class="task-detail panel-{{task.SubTask[1].State.toLowerCase()}}">
+
+                                <div class="task-detail-title">
+                                    Build
+                                </div>
+                                <div class="build-container">
+                                    <div class="pull-right text-center col-task-info">
+                                        <i class="sprite sprite-running-icon-large"></i>
+                                        <span>Release</span>
+                                    </div>
+                                    <div class="pull-left text-center col-task-info">
+                                        <i class="sprite sprite-running-icon-large"></i>
+                                        <span>Debug</span>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="font-strong text-center">
+                                    <span>{{task.Build.TimeFinished}}</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-padding">
+                            <div class="task-detail panel-{{task.SubTask[2].State.toLowerCase()}}">
+                                <div class="task-detail-title">Unit Test</div>
+                                <div>
+                                    <div class="pull-right text-center col-task-info text-percent-padding">
+                                        <span class="test-percent">{{task.UnitTest.TestPassedPercent}}%</span>
+                                        <span class="test-description-percent">Test Passed</span>
+                                    </div>
+                                    <div class="pull-left text-center col-task-info">
+                                        <div class="chart-container" id='{{task.TaskCode}}' chart model="task.UnitTest.TestData"></div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div>
+                                    <div class="progress-bar-container">
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 76%;">
+                                                <span class="percent-description">{{task.UnitTest.CodeCoveredPercent}}%</span>
+                                                <span class="percent-description font-mini">Code Covered</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-padding">
+                            <div class="task-detail panel-{{task.SubTask[2].State.toLowerCase()}}">
+                                <div class="task-detail-title">Functional Test</div>
+                                <div>
+                                    <div class="pull-right text-center col-task-info text-percent-padding">
+                                        <span class="test-percent">{{task.FunctionalTest.TestPassedPercent}}%</span>
+                                        <span class="test-description-percent">Test Passed</span>
+                                    </div>
+                                    <div class="pull-left text-center col-task-info">
+                                        <div class="chart-container" id="chart-functionatest-{{task.TaskName}}" chart model="task.FunctionalTest.TestData"></div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div>
+                                    <div class="progress-bar-container">
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 76%;">
+                                                <span class="percent-description">{{task.FunctionalTest.CodeCoveredPercent}}%</span>
+                                                <span class="percent-description font-mini">Code Covered</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="result text-center" ng-show="task.State == 'Accepted'">
+                                <span class="title-result-small">Result</span>
+                                <span class="title-result-medium-accepted">Change Accepted</span>
+                                <span style="font-size: 34px; color: #FED86E;">Auto-Merged</span>
+                                <span style="padding-top: 17px;">
+                                    <a href="#" class="btn btn-info " style="background-color: #5E9CD3; border-radius: 0;">
+                                        <span class="glyphicon glyphicon-search"></span>Merged Build
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="result text-center" ng-show="task.State == 'Rejected'">
+                                <span class="title-result-small">Result</span>
+                                <span class="title-result-medium-rejected">Change Rejected</span>
+                                <span style="font-size: 34px; color: red;">Metrics Reduction</span>
+                                <span style="padding-top: 17px;">
+                                    <a href="#" class="btn btn-info " style="background-color: #5E9CD3; border-radius: 0;">
+                                        <span class="glyphicon glyphicon-search"></span>Merged Build
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="result text-center" ng-show="task.State == 'Completed'">
+                                <span class="title-result-small">Result</span>
+                                <span class="title-result-medium-completed">Complete</span>
+                                <span>
+                                    <a href="#" class="btn btn-info btn-result">
+                                        Deploy
+                                    </a>To :
+                                </span>
+                                <span style="padding-top: 11px;">
+                                    <select style="height: 29px; border: solid 2px #5E9CD3;">
+                                        <option value="Production">Production</option>
+                                        <option value="Production">Development</option>
+                                        <option value="Production">Testing</option>
+                                        <option value="Production">Pre-production</option>
+                                    </select>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

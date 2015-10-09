@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrossOverTest.Data", "CrossOverTest.Data\CrossOverTest.Data.csproj", "{E815D538-DA53-4FD8-93B1-3F683C9333CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrossOverTest.Services", "CrossOverTest.Services\CrossOverTest.Services.csproj", "{F525C16E-0570-45DD-9198-FD77E925A220}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrossOverTest.DTO", "CrossOverTest.DTO\CrossOverTest.DTO.csproj", "{56B3ADCB-9D52-43D4-8434-1E79335579C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrossOverTest.Common", "CrossOverTest.Common\CrossOverTest.Common.csproj", "{700E309C-8209-4B91-AAB3-D32D39AFE716}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrossOverTest.UI", "CrossOverTest.UI\CrossOverTest.UI.csproj", "{D2D08834-CE5C-4736-9615-06F84FAE0F95}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://engineersworking.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CrossOverTest.Common\\CrossOverTest.Common.csproj
+		SccProjectName1 = CrossOverTest.Common
+		SccLocalPath1 = CrossOverTest.Common
+		SccProjectUniqueName2 = CrossOverTest.Data\\CrossOverTest.Data.csproj
+		SccProjectName2 = CrossOverTest.Data
+		SccLocalPath2 = CrossOverTest.Data
+		SccProjectUniqueName3 = CrossOverTest.DTO\\CrossOverTest.DTO.csproj
+		SccProjectName3 = CrossOverTest.DTO
+		SccLocalPath3 = CrossOverTest.DTO
+		SccProjectUniqueName4 = CrossOverTest.Services\\CrossOverTest.Services.csproj
+		SccProjectName4 = CrossOverTest.Services
+		SccLocalPath4 = CrossOverTest.Services
+		SccProjectUniqueName5 = CrossOverTest.UI\\CrossOverTest.UI.csproj
+		SccProjectName5 = CrossOverTest.UI
+		SccLocalPath5 = CrossOverTest.UI
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E815D538-DA53-4FD8-93B1-3F683C9333CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E815D538-DA53-4FD8-93B1-3F683C9333CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E815D538-DA53-4FD8-93B1-3F683C9333CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E815D538-DA53-4FD8-93B1-3F683C9333CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F525C16E-0570-45DD-9198-FD77E925A220}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F525C16E-0570-45DD-9198-FD77E925A220}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F525C16E-0570-45DD-9198-FD77E925A220}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F525C16E-0570-45DD-9198-FD77E925A220}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56B3ADCB-9D52-43D4-8434-1E79335579C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56B3ADCB-9D52-43D4-8434-1E79335579C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56B3ADCB-9D52-43D4-8434-1E79335579C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56B3ADCB-9D52-43D4-8434-1E79335579C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{700E309C-8209-4B91-AAB3-D32D39AFE716}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{700E309C-8209-4B91-AAB3-D32D39AFE716}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{700E309C-8209-4B91-AAB3-D32D39AFE716}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{700E309C-8209-4B91-AAB3-D32D39AFE716}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2D08834-CE5C-4736-9615-06F84FAE0F95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2D08834-CE5C-4736-9615-06F84FAE0F95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2D08834-CE5C-4736-9615-06F84FAE0F95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2D08834-CE5C-4736-9615-06F84FAE0F95}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
