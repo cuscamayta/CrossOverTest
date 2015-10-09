@@ -1,9 +1,0 @@
-C:\Users\DEVELOPER\Documents\Visual Studio 2013\Projects\CrossOverTest\CrossOverTest.Data\bin\Debug\CrossOverTest.Data.dll
-C:\Users\DEVELOPER\Documents\Visual Studio 2013\Projects\CrossOverTest\CrossOverTest.Data\bin\Debug\CrossOverTest.Data.pdb
-C:\Users\DEVELOPER\Documents\Visual Studio 2013\Projects\CrossOverTest\CrossOverTest.Data\bin\Debug\CrossOverTest.Common.dll
-C:\Users\DEVELOPER\Documents\Visual Studio 2013\Projects\CrossOverTest\CrossOverTest.Data\bin\Debug\CrossOverTest.DTO.dll
-C:\Users\DEVELOPER\Documents\Visual Studio 2013\Projects\CrossOverTest\CrossOverTest.Data\bin\Debug\CrossOverTest.Common.pdb
-C:\Users\DEVELOPER\Documents\Visual Studio 2013\Projects\CrossOverTest\CrossOverTest.Data\bin\Debug\CrossOverTest.DTO.pdb
-C:\Users\DEVELOPER\Documents\Visual Studio 2013\Projects\CrossOverTest\CrossOverTest.Data\obj\Debug\CrossOverTest.Data.csprojResolveAssemblyReference.cache
-C:\Users\DEVELOPER\Documents\Visual Studio 2013\Projects\CrossOverTest\CrossOverTest.Data\obj\Debug\CrossOverTest.Data.dll
-C:\Users\DEVELOPER\Documents\Visual Studio 2013\Projects\CrossOverTest\CrossOverTest.Data\obj\Debug\CrossOverTest.Data.pdb

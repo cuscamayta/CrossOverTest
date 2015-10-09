@@ -23,7 +23,7 @@
 
     function getTasks() {
         var response = taskService.getTasks();
-        response.then(function (data) {           
+        response.then(function (data) {       
             $scope.tasks = data;
         });
     }

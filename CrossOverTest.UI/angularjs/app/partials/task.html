@@ -18,7 +18,7 @@
         </div>
     </div>
     <div class="panel-group" id="accordion-task" role="tablist" aria-multiselectable="true">
-        <div data-ng-repeat="task in tasks" class="panel panel-{{task.State.toLowerCase()}}">
+        <div data-ng-repeat="task in tasks" class="panel panel-{{task.State.toLowerCase()}} panel-back-{{task.State.toLowerCase()}}">
             <div class="panel-heading header-information" role="tab" id="heading{{$index}}">
                 <div class="row show-grid">
                     <div class="col-md-1">

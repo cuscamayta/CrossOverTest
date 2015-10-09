@@ -257,6 +257,70 @@ span.percent-description {
 
 
 
+
+.panel-back-pending {
+    /*gradient background color */
+    background: #F3F3F3; /* Old browsers */
+    background: -moz-linear-gradient(left, #5E9CD3 1%, #fff 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(1%,#F3F3F3), color-stop(100%,#fff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, #F3F3F3 1%,#F3F3F3 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, #F3F3F3 1%,#fff 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, #F3F3F3 1%,#fff 100%); /* IE10+ */
+    background: linear-gradient(to right, #F3F3F3 1%,#fff 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F3F3F3', endColorstr='#fff',GradientType=1 ); /* IE6-9 */
+}
+
+
+.panel-back-completed {
+    /*gradient background color */
+    background: ##E4FFD4; /* Old browsers */
+    background: -moz-linear-gradient(left, #5E9CD3 1%, #fff 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(1%,##E4FFD4), color-stop(100%,#fff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, ##E4FFD4 1%,##E4FFD4 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, ##E4FFD4 1%,#fff 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, ##E4FFD4 1%,#fff 100%); /* IE10+ */
+    background: linear-gradient(to right, ##E4FFD4 1%,#fff 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='##E4FFD4', endColorstr='#fff',GradientType=1 ); /* IE6-9 */
+}
+
+.panel-back-running {
+    /*gradient background color */
+    background: #DFF0FF; /* Old browsers */
+    background: -moz-linear-gradient(left, #DFF0FF 1%, #fff 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(1%,#DFF0FF), color-stop(100%,#fff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, #DFF0FF 1%,#DFF0FF 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, #DFF0FF 1%,#fff 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, #DFF0FF 1%,#fff 100%); /* IE10+ */
+    background: linear-gradient(to right, #DFF0FF 1%,#fff 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#DFF0FF', endColorstr='#fff',GradientType=1 ); /* IE6-9 */
+}
+
+.panel-back-accepted {
+    /*gradient background color */
+    background: ##E4FFD4; /* Old browsers */
+    background: -moz-linear-gradient(left, #5E9CD3 1%, #fff 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(1%,##E4FFD4), color-stop(100%,#fff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, ##E4FFD4 1%,##E4FFD4 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, ##E4FFD4 1%,#fff 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, ##E4FFD4 1%,#fff 100%); /* IE10+ */
+    background: linear-gradient(to right, ##E4FFD4 1%,#fff 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='##E4FFD4', endColorstr='#fff',GradientType=1 ); /* IE6-9 */
+}
+
+.panel-back-rejected {
+    /*gradient background color */
+    background: #FFEEEF; /* Old browsers */
+    background: -moz-linear-gradient(left, #FFEEEF 1%, #fff 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(1%,#FFEEEF), color-stop(100%,#fff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, #FFEEEF 1%,#FFEEEF 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, #FFEEEF 1%,#fff 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, #FFEEEF 1%,#fff 100%); /* IE10+ */
+    background: linear-gradient(to right, #FFEEEF 1%,#fff 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFEEEF', endColorstr='#fff',GradientType=1 ); /* IE6-9 */
+}
+
+
+
 /**************ICONS*/
 
 .sprite {
@@ -372,10 +436,6 @@ span.percent-description {
     height: 60px;
     background-position: -292px -75px;
 }
-
-
-
-
 
 
 
