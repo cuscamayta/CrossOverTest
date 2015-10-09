@@ -1,0 +1,5 @@
+C:\Users\DEVELOPER\Documents\Visual Studio 2013\Projects\CrossOverTest\CrossOverTest.Common\bin\Debug\CrossOverTest.Common.dll
+C:\Users\DEVELOPER\Documents\Visual Studio 2013\Projects\CrossOverTest\CrossOverTest.Common\bin\Debug\CrossOverTest.Common.pdb
+C:\Users\DEVELOPER\Documents\Visual Studio 2013\Projects\CrossOverTest\CrossOverTest.Common\obj\Debug\CrossOverTest.Common.csprojResolveAssemblyReference.cache
+C:\Users\DEVELOPER\Documents\Visual Studio 2013\Projects\CrossOverTest\CrossOverTest.Common\obj\Debug\CrossOverTest.Common.dll
+C:\Users\DEVELOPER\Documents\Visual Studio 2013\Projects\CrossOverTest\CrossOverTest.Common\obj\Debug\CrossOverTest.Common.pdb
